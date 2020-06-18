@@ -1,132 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
+        <title>Laravel</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-  <title>Imkers Leiden</title>
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
 
-  <!-- Bootstrap core CSS -->
-  <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link rel="icon"
-      type="image/png"
-      href="{{asset('img/favicon.png')}}">
-<style>
+            .full-height {
+                height: 100vh;
+            }
 
-header,footer {
-  background-color:#EB9605;
-  color:white;
-}
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
 
-.row.mt-2 {
-    width: 100%!important;
-}
+            .position-ref {
+                position: relative;
+            }
 
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
 
-</style>
-</head>
+            .content {
+                text-align: center;
+            }
 
-<body>
+            .title {
+                font-size: 84px;
+            }
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color:#ffffff">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="{{asset('img/logo.png')}}" style="max-width:100px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/activiteiten">Activiteiten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/agenda">Agenda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cursussen">Cursussen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/nieuws">Nieuws</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/vereniging">Vereniging</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/stertselaar">Stertselaar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/zwerm">Zwerm</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/bijenstal">Bijenstal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/galerij">Galerij</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/shop">Shop</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
 
-  <!-- Page Content -->
-  <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-left">
-        <p class="lead mt-3">Home | Imkers Leiden</p> <!--MAYBE ADD BREADCRUMB-->
-      </div>
-    </div>
-  </div>
-</header>
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
 
-<div class="row mt-2">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-7">
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-  </div>
-  <div class="col-sm-3">IMAGE</div>
-</div>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
 
-<hr>
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
 
-<div class="row mt-2">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-3">IMAGE</div>
-  <div class="col-sm-7">
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="page-footer font-small indigo">
-<!-- Copyright -->
-  <div class="footer-copyright text-center py-4">© 2020 Project 8AMO1 Groep 6: Dylan van Leeuwen, Max van Berge Henegouwen, Sepehr Abdoli, Svijetlana Devilee, Matthijs Houwaart
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('jquery/jquery.slim.min.js') }}"></script>
-  <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-</body>
-
+                <div class="links">
+                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
