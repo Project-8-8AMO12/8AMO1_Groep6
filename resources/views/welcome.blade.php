@@ -14,6 +14,11 @@
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <style>
 
+header {
+  background-color:#EB9605;
+  color:white;
+}
+
 </style>
 </head>
 
@@ -62,18 +67,15 @@
   </nav>
 
   <!-- Page Content -->
+  <header>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.5</li>
-          <li>jQuery 3.5.1</li>
-        </ul>
+      <div class="col-lg-12 text-left">
+        <p class="lead mt-3">Home | Imkers Leiden</p> <!--MAYBE ADD BREADCRUMB-->
       </div>
     </div>
   </div>
+</header>
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{ asset('jquery/jquery.slim.min.js') }}"></script>

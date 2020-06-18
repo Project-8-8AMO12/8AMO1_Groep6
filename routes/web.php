@@ -44,8 +44,8 @@ Route::get('/stertselaar', function () {
 });
 
 // album route
-Route::get('/album', function () {
-    return view('album');
+Route::get('/galerij', function () {
+    return view('galerij');
 });
 
 // acitivity route
