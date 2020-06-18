@@ -13,6 +13,62 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// welcome route
 Route::get('/', function () {
     return view('welcome');
+});
+
+// callendar route
+Route::get('/agenda', function () {
+    return view('agenda');
+});
+
+// news route
+Route::get('/nieuws', function () {
+    return view('nieuws');
+});
+
+// apiary route
+Route::get('/bijenstal', function () {
+    return view('bijenstal');
+});
+
+// shop route
+Route::get('/shop', function () {
+    return view('shop');
+});
+
+// Stertselaar route
+Route::get('/stertselaar', function () {
+    return view('stertselaar');
+});
+
+// album route
+Route::get('/galerij', function () {
+    return view('galerij');
+});
+
+// acitivity route
+Route::get('/activiteiten', function () {
+    return view('activiteiten');
+});
+
+// courses route
+Route::get('/cursussen', function () {
+    return view('cursussen');
+});
+
+// Association route
+Route::get('/vereniging', function () {
+    return view('vereniging');
+});
+
+// swarm route
+Route::get('/zwerm', function () {
+    return view('zwerm');
+});
+
+// member route
+Route::get('/lid', function () {
+    return view('lid');
 });
