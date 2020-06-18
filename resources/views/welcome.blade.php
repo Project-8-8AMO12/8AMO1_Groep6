@@ -12,12 +12,20 @@
 
   <!-- Bootstrap core CSS -->
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="icon"
+      type="image/png"
+      href="{{asset('img/favicon.png')}}">
 <style>
 
-header {
+header,footer {
   background-color:#EB9605;
   color:white;
 }
+
+.row.mt-2 {
+    width: 100%!important;
+}
+
 
 </style>
 </head>
@@ -59,7 +67,13 @@ header {
             <a class="nav-link" href="/zwerm">Zwerm</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/bijenstal">Bijenstal</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/galerij">Galerij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/shop">Shop</a>
           </li>
         </ul>
       </div>
@@ -76,6 +90,38 @@ header {
     </div>
   </div>
 </header>
+
+<div class="row mt-2">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-7">
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div>
+  <div class="col-sm-3">IMAGE</div>
+</div>
+
+<hr>
+
+<div class="row mt-2">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-3">IMAGE</div>
+  <div class="col-sm-7">
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+<!-- Copyright -->
+  <div class="footer-copyright text-center py-4">© 2020 Project 8AMO1 Groep 6: Dylan van Leeuwen, Max van Berge Henegouwen, Sepehr Abdoli, Svijetlana Devilee, Matthijs Houwaart
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{ asset('jquery/jquery.slim.min.js') }}"></script>
