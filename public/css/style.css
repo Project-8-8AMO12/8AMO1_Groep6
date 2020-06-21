@@ -13,3 +13,39 @@
     background-color: 	#f2f2f2;
 }
 
+#activietenimg{
+    background-image: url('../images/imkers.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+
+#cursimg{
+    background-image: url('../images/curs.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+
+#bijenhoudimg{
+    background-image: url('../images/bijenhoud.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#zwermimg{
+    background-image: url('../images/bij.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#lidimg{
+    background-image: url('../images/lid.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
