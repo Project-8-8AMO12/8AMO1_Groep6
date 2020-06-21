@@ -1,0 +1,15 @@
+#homeh1container{
+    background-image: url('../images/bijen.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#homecontainers{
+    background-color: white;
+}
+
+.jumbotron{
+    background-color: 	#f2f2f2;
+}
+

@@ -10,12 +10,16 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 </head>
 <body>
 @include('inc.nav')
 @yield('content')
+
+
 
 
 
