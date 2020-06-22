@@ -1,71 +1,160 @@
+<!DOCTYPE html>
 <html lang="en">
-<title>Imkers Leiden | Vereniging</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-    .fa-anchor,.fa-coffee {font-size:200px}
 
-    form {
-        padding-top: 100px;
-    }
-</style>
+<head>
 
-<div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Activiteiten</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Agenda</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bijenstal</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Zwerm</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Stertselaar</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vereniging</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cursussen</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Nieuws</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Shop</a>
-    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-    </div>
-</div>
-<div class="w3-container-padding">
-    <div class="w3-col" style="width: 45%">
-        <div class="w3-container">
-            <form action="contact" method="post">
-                <div class="w3-row-padding">
-                    <div class="w3-col w3-half">
-                        <label class="w3-text">Naam</label>
-                        <input class="w3-input w3-border" type="text" name="naam" required>
-                    </div>
-                    <div class="w3-col w3-half">
-                        <label class="w3-text">E-mail</label>
-                        <input class="w3-input w3-border" type="text" name="email" required>
-                    </div>
-                </div>
-                <div class="w3-col w3-padding">
-                    <label class="w3-text">Bericht</label>
-                    <input class="w3-input w3-border" type="text" name="bericht" required>
-                </div>
-                <div class="w3-col w3-padding">
-                    <button class="w3-btn w3-yellow w3-border" type="submit">Verstuur Bericht</button>
-                </div>
-                @csrf
-            </form>
+    <title>Imkers Leiden</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="icon"
+          type="image/png"
+          href="{{asset('img/favicon.png')}}">
+    <style>
+
+        header,footer,button {
+            background-color:#EB9605;
+            color:white;
+        }
+
+        .row.mt-2 {
+            width: 100%!important;
+        }
+
+        .formbutton {
+            color: white;
+            background-color: #EB9605;
+            border-color: #faa310;
+        }
+
+        .error{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color:#ffffff">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="{{asset('img/logo.png')}}" style="max-width:100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/activiteiten">Activiteiten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/agenda">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cursussen">Cursussen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nieuws">Nieuws</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/vereniging">Vereniging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stertselaar">Stertselaar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/zwerm">Zwerm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bijenstal">Bijenstal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galerij">Galerij</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shop">Shop</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="w3-col" style="width: 10%"></div>
-    <div class="w3-col" style="width: 45%">
+</nav>
 
+<!-- Page Content -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="lead mt-3">Home | Imkers Leiden</p> <!--MAYBE ADD BREADCRUMB-->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row mt-2">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+        <form action="contact" method="post">
+            <div class="form-group">
+                <label for="formGroupExampleInput">Naam</label>
+                <input type="text" class="form-control @error('naam') is-invalid @enderror" name="naam" value="{{old('naam')}}" required>
+                @if ($errors->has('naam'))
+                    <p class="error">{{$errors->first('naam')}}</p>
+                @endif
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{old('email')}}" required>
+                @if ($errors->has('email'))
+                    <p class="error">{{$errors->first('email')}}</p>
+                @endif
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Bericht</label>
+                <textarea class="form-control @error('email') is-invalid @enderror" rows="3" name="bericht" value="{{old('bericht')}}" required></textarea>
+                @if ($errors->has('bericht'))
+                    <p class="error">{{$errors->first('bericht')}}</p>
+                @endif
+            </div>
+            <div>
+                <button type="submit" class="btn formbutton">Verstuur Bericht</button>
+            </div>
+            @csrf
+        </form>
+    </div>
+    <div class="col-sm-3">  <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
     </div>
 </div>
+
+<hr>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-4">© 2020 Project 8AMO1 Groep 6: Dylan van Leeuwen, Max van Berge Henegouwen, Sepehr Abdoli, Svijetlana Devilee, Matthijs Houwaart
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ asset('jquery/jquery.slim.min.js') }}"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+
+</html>
