@@ -131,15 +131,43 @@
             @csrf
         </form>
     </div>
-    <div class="col-sm-3">  <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+    <div class="col-sm-3">
+        <h2>Het bestuur van de vereniging bestaat uit:</h2>
+        <ul>
+            <h6>Voorzitter</h6>
+            <li>Steven Kluft</li>
+            <li>06-37090821</li>
+            <br>
+            <h6>Leden:</h6>
+
+            <li>Hans Kluivers</li>
+            <li>06-24693636</li>
+            <br>
+            <li>Ottoline Dinger</li>
+            <li>06-11325112</li>
+            <br>
+            <li>Peter Henneman</li>
+            <li>06-53735714</li>
+            <br>
+            <li>Roland Koster</li>
+            <li>06-12696855</li>
+        </ul>
     </div>
 </div>
 
 <hr>
 
-
+<div class="row mt-2">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <h2>Winkel / verenigingsgebouw (voorheen depot)</h2>
+        <p>Boerenpad 3 <br>2322 LA Leiden</p>
+    </div>
+    <div class="col-sm-5">
+        <h2>Postadres</h2>
+        <p>Imkersvereniging Leiden en omstreken<br>Jan van Goyenkade 42<br>2311 BC Leiden</p></div>
+    <div class="col-sm-1"></div>
+</div>
 
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
