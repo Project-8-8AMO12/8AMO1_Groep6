@@ -33,6 +33,14 @@ Route::get('/bijenstal', function () {
     return view('bijenstal');
 });
 
+// contact route
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+// contact from submit
+Route::post('/contact', 'ContactController@send');
+
 // shop route
 Route::get('/shop', function () {
     return view('shop');
