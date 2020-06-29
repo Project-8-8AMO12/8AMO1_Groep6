@@ -11,6 +11,7 @@
   <title>Imkers Leiden</title>
 
   <!-- Bootstrap core CSS -->
+  <link href="{{ asset('css/default.css') }}" rel="stylesheet">
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link rel="icon"
       type="image/png"

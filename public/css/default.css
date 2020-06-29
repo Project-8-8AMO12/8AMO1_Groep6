@@ -1,0 +1,18 @@
+header,footer,button {
+  background-color:#FFFF00;
+  color:white;
+}
+
+.row.mt-2 {
+    width: 100%!important;
+}
+
+.formbutton {
+    color: white;
+    background-color: #FFFF00;
+    border-color: #faa310;
+}
+
+.error{
+    color: red;
+}
