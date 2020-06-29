@@ -80,3 +80,7 @@ Route::get('/zwerm', function () {
 Route::get('/lid', function () {
     return view('lid');
 });
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
