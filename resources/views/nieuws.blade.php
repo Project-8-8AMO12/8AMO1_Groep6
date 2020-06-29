@@ -18,7 +18,7 @@
 <style>
 
 header,footer {
-  background-color:#EB9605;
+  background-color:#FFFF00;
   color:white;
 }
 
