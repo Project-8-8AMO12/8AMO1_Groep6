@@ -80,3 +80,5 @@ Route::get('/zwerm', function () {
 Route::get('/lid', function () {
     return view('lid');
 });
+Route::get('/asettings', 'SettingsController@settings')->middleware('auth');
+Route::post('asettings/create','SettingsController@insert');
