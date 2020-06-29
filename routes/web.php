@@ -56,11 +56,6 @@ Route::get('/galerij', function () {
     return view('galerij');
 });
 
-// courses route
-Route::get('/cursussen', function () {
-    return view('cursussen');
-});
-
 // Association route
 Route::get('/vereniging', function () {
     return view('vereniging');
@@ -80,3 +75,4 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/activiteiten','pagecontroller@index1');
+Route::get('/cursussen','pagecontroller@index2');

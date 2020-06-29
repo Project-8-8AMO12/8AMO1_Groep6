@@ -11,4 +11,9 @@ class pagecontroller extends Controller
         return view('activiteiten');
     }
 
+    public function index2()
+    {
+        return view('cursussen');
+    }
+
 }
