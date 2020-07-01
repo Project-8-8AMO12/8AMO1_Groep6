@@ -27,10 +27,13 @@ Route::get('/cursussen', 'PagesController@shop');
 Route::get('/vereniging', 'PagesController@vereniging');
 Route::get('/zwerm', 'PagesController@zwerm');
 Route::get('/lid', 'PagesController@lid');
+Route::get('/login', 'PagesController@login');
+Route::get('/register', 'PagesController@register');
+
 
 // contact from submit
 Route::post('/contact', 'ContactController@send');
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');

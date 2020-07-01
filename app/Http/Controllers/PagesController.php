@@ -11,7 +11,6 @@ class PagesController extends Controller
     public function agenda(){ return view('agenda'); }
     public function nieuws(){ return view('nieuws'); }
     public function bijenstal(){ return view('bijenstal'); }
-    public function contact(){ return view('contact'); }
     public function shop(){ return view('shop'); }
     public function stertselaar(){ return view('stertselaar'); }
     public function galerij(){ return view('galerij'); }
@@ -20,4 +19,8 @@ class PagesController extends Controller
     public function vereniging(){ return view('vereniging'); }
     public function zwerm(){ return view('zwerm'); }
     public function lid(){ return view('lid'); }
+    public function login(){ return view('auth/login'); }
+    public function register(){ return view('auth/register'); }
+    public function verify(){ return view('auth/verify'); }
+    public function verificationsent(){ return view('auth/verificationsent'); }
 }

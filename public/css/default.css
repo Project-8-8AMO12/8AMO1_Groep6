@@ -19,3 +19,6 @@ header,footer,button {
 .row.mt-3 {
     max-width: 100%!important;
 }
+a.nav-link {
+    font-size: 1.35vw;
+}
