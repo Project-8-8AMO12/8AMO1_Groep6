@@ -38,13 +38,13 @@
                 @endif
             </div>
             <div>
-                <button type="submit" class="btn formbutton">Verstuur Bericht</button>
+                <button type="submit" class="btn formbutton btn-primary">Verstuur Bericht</button>
             </div>
             @csrf
         </form>
     </div>
     <div class="col-sm-3">
-        <h2>Het bestuur van de vereniging bestaat uit:</h2>
+        <h2>Het bestuur</h2>
         <ul>
             <h6>Voorzitter</h6>
             <li>Steven Kluft</li>

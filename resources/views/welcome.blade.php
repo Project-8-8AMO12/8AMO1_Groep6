@@ -1,8 +1,8 @@
 @extends('layouts.default')
 @section('content')
 
-  <!-- Page Content -->
-  <header>
+<!-- Page Content -->
+<header>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-left">
@@ -12,26 +12,36 @@
   </div>
 </header>
 
-<div class="row mt-2">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-7">
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
+<div class="row mt-3">
+  <div class="col-sm-9">
+    <h4>  Welkom op de website van Imkersvereniging Leiden!</h4>
   </div>
-  <div class="col-sm-3">IMAGE</div>
+  <div class="col-sm-3"></div>
 </div>
 
 <hr>
 
-<div class="row mt-2">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-3">IMAGE</div>
-  <div class="col-sm-7">
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-  </div>
-</div>
+    <div class="row mt-2 mb-2">
+      <div class="col-sm-3"><img src="{{asset('img/honingraat.jpg')}}" class="img-fluid rounded float-right"></div>
+      <div class="col-sm-9">
+        <h6>Wat wij doen:</h6>
+        <p>
+          - <b>Bijenhouden</b>, zo hebben wij een aantal bijenstallen. Deze zijn te vinden in o.a. het Heempark te Leiden, de kinderboerderij in de Merenwijk, Koninginneweg te Noordwijkerhout en tot slot nog een bijenstal in het Polderpark Cronesteijn.<br>
+          - <b>Bijeenkomsten organiseren</b>, bijvoorbeeld de jaarlijkse bijenmarkt, of lezingen, films, diavertoningen, en zelfs cursussen bijenteelt!
+        </p>
+      </div>
+    </div>
 
-@endsection
+    <hr>
+
+    <div class="row mt-2 mb-2">
+      <div class="col-sm-9">
+        <p>
+          <b>Bijenhouden als hobby</b><br>
+          De tijd van de romantische bijenteelt in strokorven is voorbij. Tegenwoordig worden bijen hoofdzakelijk gehouden in meerdelige houten of kunstof kasten. Het voordeel van kasten is dat de imker zijn volken gemakkelijker kan controleren. De raampjes kunnen er worden uitgehaald om de honing te oogsten, en om ziekten en plagen van de bijen te bestrijden. Het is in Nederland niet mogelijk van de bijenteelt te leven, maar als de imker het goed doet, kan het imkeren een aardige hoeveelheid honing opleveren, en hoeft de hobby weinig geld te kosten.
+        </p>
+      </div>
+      <div class="col-sm-3"><img src="{{asset('img/imker2.jpg')}}" class="img-fluid rounded"></div>
+    </div>
+
+    @endsection
