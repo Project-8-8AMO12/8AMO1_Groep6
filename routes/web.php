@@ -13,73 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Pagecontroller aanmaken
-// welcome route
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// callendar route
-Route::get('/agenda', function () {
-    return view('agenda');
-});
-
-// news route
-Route::get('/nieuws', function () {
-    return view('nieuws');
-});
-
-// apiary route
-Route::get('/bijenstal', function () {
-    return view('bijenstal');
-});
-
-// contact route
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', 'PagesController@index');
+Route::get('/contact', 'PagesController@contact');
+Route::get('/agenda', 'PagesController@agenda');
+Route::get('/nieuws', 'PagesController@nieuws');
+Route::get('/bijenstal', 'PagesController@bijenstal');
+Route::get('/contact', 'PagesController@contact');
+Route::get('/shop', 'PagesController@shop');
+Route::get('/stertselaar', 'PagesController@shop');
+Route::get('/galerij', 'PagesController@galerij');
+Route::get('/activiteiten', 'PagesController@activiteiten');
+Route::get('/cursussen', 'PagesController@shop');
+Route::get('/vereniging', 'PagesController@vereniging');
+Route::get('/zwerm', 'PagesController@zwerm');
+Route::get('/lid', 'PagesController@lid');
 
 // contact from submit
 Route::post('/contact', 'ContactController@send');
-
-// shop route
-Route::get('/shop', function () {
-    return view('shop');
-});
-
-// Stertselaar route
-Route::get('/stertselaar', function () {
-    return view('stertselaar');
-});
-
-// album route
-Route::get('/galerij', function () {
-    return view('galerij');
-});
-
-// acitivity route
-Route::get('/activiteiten', function () {
-    return view('activiteiten');
-});
-
-// courses route
-Route::get('/cursussen', function () {
-    return view('cursussen');
-});
-
-// Association route
-Route::get('/vereniging', function () {
-    return view('vereniging');
-});
-
-// swarm route
-Route::get('/zwerm', function () {
-    return view('zwerm');
-});
-
-// member route
-Route::get('/lid', function () {
-    return view('lid');
-});
 
 Auth::routes(['register' => false]);
 
