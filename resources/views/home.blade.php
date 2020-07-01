@@ -16,6 +16,14 @@
 
                     You are logged in!
                 </div>
+
+                <div class="card-body">
+                    @if (\Illuminate\Support\Facades\Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            <p>{{\Illuminate\Support\Facades\Session::get('success')}}
+                        </div>
+                    @endif
+                </div>
             </div>
         </div>
     </div>

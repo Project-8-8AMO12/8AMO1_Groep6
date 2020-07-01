@@ -73,6 +73,23 @@ Route::get('/lid', function () {
     return view('lid');
 });
 
+Route::get('/createpagina', function () {
+    return view('createpagina');
+});
+
+Route::get('/paginas', function () {
+    return view('paginas');
+});
+
+Route::get('/paginas', 'CreateAndUpdateController@getedit');
+
+Route::post('/createpagina', 'CreateAndUpdateController@create');
+
+Route::get('/editpagina', 'CreateAndUpdateController@getedit');
+Route::post('/editpagina', 'CreateAndUpdateController@edit');
+
 Auth::routes(['register' => false]);
 
+
 Route::get('/home', 'HomeController@index')->name('home');
+
