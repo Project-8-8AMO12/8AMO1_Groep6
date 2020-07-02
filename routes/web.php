@@ -36,8 +36,12 @@ Route::post('/contact', 'ContactController@send');
 
 Auth::routes(['register' => true]);
 
+Route::get('/asettings', 'SettingsController@settings')->middleware('auth');
+Route::post('asettings/create','SettingsController@insert');
+
 // messages routing
 Route::get('messages', 'MessageController@messages')->middleware('auth');
 Route::get('/messages/message/{id}', 'MessageController@viewindividual')->middleware('auth');
 Route::get('/messages/delete/{id}','MessageController@delete');
 Route::get('/home', 'HomeController@index')->name('home');
+
