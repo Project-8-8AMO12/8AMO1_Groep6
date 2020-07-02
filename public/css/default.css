@@ -16,3 +16,9 @@ header,footer,button {
 .error{
     color: red;
 }
+.row.mt-3 {
+    max-width: 100%!important;
+}
+a.nav-link {
+    font-size: 1.35vw;
+}
