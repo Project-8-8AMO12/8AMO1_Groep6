@@ -77,19 +77,17 @@ Route::get('/createpagina', function () {
     return view('createpagina');
 });
 
-Route::get('/paginas', function () {
-    return view('paginas');
-});
 
-Route::get('/paginas', 'CreateAndUpdateController@getedit');
 
-Route::post('/createpagina', 'CreateAndUpdateController@create');
+Route::get('/home', 'CreateAndUpdateController@getPages')->name('getpages');
 
-Route::get('/editpagina', 'CreateAndUpdateController@getedit');
-Route::post('/editpagina', 'CreateAndUpdateController@edit');
+Route::get('/createpagina', 'CreateAndUpdateController@getCreate');
+Route::post('/createpagina', 'CreateAndUpdateController@Create');
+
+Route::get('/editpagina/{id}', 'CreateAndUpdateController@getUpdate')->name('editpage');
+Route::post('/{id}/editpagina', 'CreateAndUpdateController@Update');
+
+Route::get('/deletepagina/{id}', 'CreateAndUpdateController@Delete');
 
 Auth::routes(['register' => false]);
-
-
-Route::get('/home', 'HomeController@index')->name('home');
 

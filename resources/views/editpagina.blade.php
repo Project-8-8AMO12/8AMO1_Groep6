@@ -10,20 +10,20 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-10 border rounded border-dark px-xl-5 pt-xl-4 pb-xl-1 ">
-                <form action="editpagina" method="post">
+                <form action="/{{$editpage->id}}/editpagina" method="post">
                     <div class="form-row">
                         <div class="col form-group">
                             <label for="title">Title</label>
-                            <input class="form-control" id="title" name="title" type="text"  value="{{$EditAndUpdate->title}}">
+                            <input class="form-control" id="title" name="title" type="text"  value="{{$editpage->title}}">
                         </div>
                         <div class="col form-group">
                             <label for="subtitle">Subtitle</label>
-                            <input class="form-control"  id="subtitle" name="subtitle" type="text" value="{{$EditAndUpdate->subtitle}}">
+                            <input class="form-control"  id="subtitle" name="subtitle" type="text" value="{{$editpage->subtitle}}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="content">Inhoud</label>
-                        <textarea class="form-control" id="content" name="content" rows="20">{{$EditAndUpdate->content}}</textarea>
+                        <textarea class="form-control" id="content" name="content" rows="20">{{$editpage->content}}</textarea>
                         <button type="submit" class="btn btn-primary mt-3">Opslaan</button>
                     </div>
                     @csrf

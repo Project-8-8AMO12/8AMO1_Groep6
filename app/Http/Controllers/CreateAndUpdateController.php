@@ -7,14 +7,29 @@ use Illuminate\Http\Request;
 
 class CreateAndUpdateController extends Controller
 {
-    public function getedit($id)
+    public function __construct()
     {
-        $getedit = CreateAndUpdate::find($id);
-
-        return view('internals.editpagina', ['getedit' => $getedit]);
+        $this->middleware('auth');
     }
 
-    public function create()
+    public function getUpdate($id)
+    {
+        $editpage = CreateAndUpdate::where('id', $id)->first();
+        return view('editpagina', ['editpage' => $editpage]);
+    }
+
+    public function getPages()
+    {
+        $getpages = CreateAndUpdate::all();
+        return view('home', ['getpages' => $getpages]);
+    }
+    public function getCreate()
+    {
+
+        return view('createpagina');
+    }
+
+    public function Create()
     {
         $data = request()->validate(['title' => 'required|min:3|max:50']);
         $data = request()->validate(['subtitle' => 'required|max:50']);
@@ -28,7 +43,7 @@ class CreateAndUpdateController extends Controller
         return redirect('/home')->with('success','data opgeslagen');
     }
 
-    public function update($id)
+    public function Update($id)
     {
 
         $data = request()->validate(['title' => 'required|min:3|max:50']);
@@ -44,11 +59,12 @@ class CreateAndUpdateController extends Controller
         return redirect('/home')->with('success','data updated');
     }
 
-    public function delete($id)
+    public function Delete($id)
     {
-        $CreateAndUpdate = CreateAndUpdate::find($id);
-        $CreateAndUpdate->delete();
-
-        return redirect('/home')->with('success','data verwijderd');
+        $delete = CreateAndUpdate::where('id', $id)->first();
+        if($delete) {
+            $delete->delete();
+            return redirect('/home')->with('success', 'data verwijderd');
+        }
     }
 }
