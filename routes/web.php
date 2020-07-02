@@ -34,6 +34,13 @@ Route::get('/register', 'PagesController@register');
 // contact from submit
 Route::post('/contact', 'ContactController@send');
 
+ issue_#21_subpages
+ Stertselaar route
+
+
+// album route
+Auth::routes(['register' => false]);
+
 // current account settings
 Route::get('/asettings', 'SettingsController@settings')->middleware('auth');
 Route::post('asettings/create','SettingsController@insert');
@@ -54,7 +61,16 @@ Route::get('/messages/delete/{id}','MessageController@delete');
 
 // laravel auth route
 Auth::routes();
+ Development
 
 // welcome route after user is authenticated.
-Route::get('/home', 'HomeController@index')->name('home');
 
+ issue_#21_subpages
+
+Route::get('/ver','pagecontroller@index3');
+
+
+
+
+
+Development
