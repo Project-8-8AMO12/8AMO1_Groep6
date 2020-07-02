@@ -34,14 +34,27 @@ Route::get('/register', 'PagesController@register');
 // contact from submit
 Route::post('/contact', 'ContactController@send');
 
-Auth::routes(['register' => true]);
-
+// current account settings
 Route::get('/asettings', 'SettingsController@settings')->middleware('auth');
 Route::post('asettings/create','SettingsController@insert');
+
+// user settings routes
+Route::get('/usettings', 'SettingsController@usettings')->middleware('auth');
+Route::post('/usettings/create','SettingsController@uinsert');
+Route::get('/usettings/deleteuser/{id}','SettingsController@deleteuser');
+Route::get('/usettings/edituser/{id}', 'SettingsController@edituser')->middleware('auth');
+Route::post('/usettings/edituserpost/{id}', 'SettingsController@edituserpost')->middleware('auth');
+Route::get('/usettings/adduser', 'SettingsController@adduser')->middleware('auth');
+Route::post('asettings/adduserpost','SettingsController@adduserpost');
 
 // messages routing
 Route::get('messages', 'MessageController@messages')->middleware('auth');
 Route::get('/messages/message/{id}', 'MessageController@viewindividual')->middleware('auth');
 Route::get('/messages/delete/{id}','MessageController@delete');
+
+// laravel auth route
+Auth::routes();
+
+// welcome route after user is authenticated.
 Route::get('/home', 'HomeController@index')->name('home');
 
