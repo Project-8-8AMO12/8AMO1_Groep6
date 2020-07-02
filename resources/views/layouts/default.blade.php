@@ -11,10 +11,10 @@
 
   <!-- Bootstrap core CSS -->
   <link href="{{ asset('css/default.css') }}" rel="stylesheet">
-  <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link rel="icon"
       type="image/png"
-      href="{{asset('img/favicon.png')}}">
+      href="{{asset('img/bij.jpg')}}">
 </head>
 
 <body>

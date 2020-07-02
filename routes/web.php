@@ -33,10 +33,7 @@ Route::get('/register', 'PagesController@register');
 
 // contact from submit
 Route::post('/contact', 'ContactController@send');
-
- issue_#21_subpages
- Stertselaar route
-
+Route::post('/home', 'ContactController@send');
 
 // album route
 Auth::routes(['register' => false]);
@@ -58,19 +55,3 @@ Route::post('asettings/adduserpost','SettingsController@adduserpost');
 Route::get('messages', 'MessageController@messages')->middleware('auth');
 Route::get('/messages/message/{id}', 'MessageController@viewindividual')->middleware('auth');
 Route::get('/messages/delete/{id}','MessageController@delete');
-
-// laravel auth route
-Auth::routes();
- Development
-
-// welcome route after user is authenticated.
-
- issue_#21_subpages
-
-Route::get('/ver','pagecontroller@index3');
-
-
-
-
-
-Development
