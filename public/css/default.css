@@ -16,3 +16,28 @@ header,footer,button {
 .error{
     color: red;
 }
+
+#homeh1container{
+    background-color: black;
+}
+
+#activietenimg{
+    background-image: url("../img/imker1.jpg");
+}
+
+#cursimg{
+    background-image: url("../img/imker2.jpg");
+}
+
+
+#bijenhoudimg{
+    background-image: url("../img/imker3.jpg");
+}
+
+#zwermimg{
+    background-image: url("../img/imker4.jpg");
+}
+
+#lidimg{
+    background-image: url("../img/download.jpg");
+}
