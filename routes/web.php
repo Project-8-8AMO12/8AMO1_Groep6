@@ -52,11 +52,6 @@ Route::get('/stertselaar', function () {
 });
 
 // album route
-// Association route
-Route::get('/vereniging', function () {
-    return view('vereniging');
-});
-
 // member route
 Route::get('/lid', function () {
     return view('lid');
@@ -67,5 +62,6 @@ Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/activiteiten','pagecontroller@index1');
 Route::get('/cursussen','pagecontroller@index2');
+Route::get('/ver','pagecontroller@index3');
 Route::get('/zwerm','pagecontroller@index4');
 Route::get('/gallery','pagecontroller@index6');
