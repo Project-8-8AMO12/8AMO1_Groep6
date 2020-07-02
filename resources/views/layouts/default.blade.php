@@ -10,8 +10,11 @@
   <title>Imkers Leiden</title>
 
   <!-- Bootstrap core CSS -->
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
   <link href="{{ asset('css/default.css') }}" rel="stylesheet">
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="carousel.css" rel="stylesheet">
   <link rel="icon"
       type="image/png"
       href="{{asset('img/favicon.png')}}">
@@ -62,6 +65,9 @@
           <li class="nav-item {{ Menu::active('shop') }}">
             <a class="nav-link" href="/shop">Shop</a>
           </li>
+          <li class="nav-item {{ Menu::active('lid') }}">
+            <a class="nav-link" href="/lid">lid worden</a>
+          </li>
           <li class="nav-item {{ Menu::active('contact') }}">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
@@ -83,7 +89,9 @@
 </body>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('jquery/jquery.slim.min.js') }}"></script>
-  <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  </html>
+
+</html>
