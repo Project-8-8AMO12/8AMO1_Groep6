@@ -26,6 +26,11 @@ class pagecontroller extends Controller
         return view('zwerm');
     }
 
+    public function index5()
+    {
+        return view('lid');
+    }
+
     public function index6()
     {
         return view('galerij');
