@@ -16,6 +16,11 @@ class pagecontroller extends Controller
         return view('cursussen');
     }
 
+    public function index4()
+    {
+        return view('zwerm');
+    }
+
     public function index6()
     {
         return view('galerij');

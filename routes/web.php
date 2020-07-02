@@ -57,11 +57,6 @@ Route::get('/vereniging', function () {
     return view('vereniging');
 });
 
-// swarm route
-Route::get('/zwerm', function () {
-    return view('zwerm');
-});
-
 // member route
 Route::get('/lid', function () {
     return view('lid');
@@ -72,4 +67,5 @@ Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/activiteiten','pagecontroller@index1');
 Route::get('/cursussen','pagecontroller@index2');
+Route::get('/zwerm','pagecontroller@index4');
 Route::get('/gallery','pagecontroller@index6');
