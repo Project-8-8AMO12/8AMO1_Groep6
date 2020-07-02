@@ -58,7 +58,7 @@ Auth::routes(['register' => false]);
 Route::get('/','pagecontroller@index');
 Route::get('/activiteiten','pagecontroller@index1');
 Route::get('/cursussen','pagecontroller@index2');
-Route::get('/ver','pagecontroller@index3');
+Route::get('/vereniging','pagecontroller@index3');
 Route::get('/zwerm','pagecontroller@index4');
 Route::get('/lid','pagecontroller@index5');
 Route::get('/gallery','pagecontroller@index6');
