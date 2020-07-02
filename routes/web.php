@@ -36,4 +36,12 @@ Route::post('/contact', 'ContactController@send');
 
 Auth::routes(['register' => true]);
 
+// user settings routes
+Route::get('/usettings', 'SettingsController@usettings')->middleware('auth');
+Route::post('/usettings/create','SettingsController@uinsert');
+Route::get('/usettings/deleteuser/{id}','SettingsController@deleteuser');
+Route::get('/usettings/edituser/{id}', 'SettingsController@edituser')->middleware('auth');
+Route::post('/usettings/edituserpost/{id}', 'SettingsController@edituserpost')->middleware('auth');
+Route::get('/usettings/adduser', 'SettingsController@adduser')->middleware('auth');
+Route::post('asettings/adduserpost','SettingsController@adduserpost');
 Route::get('/home', 'HomeController@index')->name('home');
