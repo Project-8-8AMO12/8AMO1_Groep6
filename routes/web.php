@@ -33,12 +33,10 @@ Route::get('/register', 'PagesController@register');
 
 // contact from submit
 Route::post('/contact', 'ContactController@send');
-
- issue_#21_subpages
- Stertselaar route
-
+Route::post('/home', 'ContactController@send');
 
 // album route
+<<<<<<< HEAD
 Auth::routes(['register' => false]);
 
 // current account settings
@@ -58,19 +56,52 @@ Route::post('asettings/adduserpost','SettingsController@adduserpost');
 Route::get('messages', 'MessageController@messages')->middleware('auth');
 Route::get('/messages/message/{id}', 'MessageController@viewindividual')->middleware('auth');
 Route::get('/messages/delete/{id}','MessageController@delete');
+=======
+Route::get('/album', function () {
+    return view('album');
+});
 
-// laravel auth route
-Auth::routes();
- Development
+// acitivity route
+Route::get('/activiteiten', function () {
+    return view('activiteiten');
+});
 
-// welcome route after user is authenticated.
+// courses route
+Route::get('/cursussen', function () {
+    return view('cursussen');
+});
 
- issue_#21_subpages
+// Association route
+Route::get('/vereniging', function () {
+    return view('vereniging');
+});
 
-Route::get('/ver','pagecontroller@index3');
+// swarm route
+Route::get('/zwerm', function () {
+    return view('zwerm');
+});
+
+// member route
+Route::get('/lid', function () {
+    return view('lid');
+});
+
+Route::get('/createpagina', function () {
+    return view('createpagina');
+});
 
 
 
+Route::get('/home', 'CreateAndUpdateController@getPages')->name('getpages');
 
+Route::get('/createpagina', 'CreateAndUpdateController@getCreate');
+Route::post('/createpagina', 'CreateAndUpdateController@Create');
 
-Development
+Route::get('/editpagina/{id}', 'CreateAndUpdateController@getUpdate')->name('editpage');
+Route::post('/{id}/editpagina', 'CreateAndUpdateController@Update');
+
+Route::get('/deletepagina/{id}', 'CreateAndUpdateController@Delete');
+
+Auth::routes(['register' => false]);
+
+>>>>>>> Issue_#1_cms_pages
