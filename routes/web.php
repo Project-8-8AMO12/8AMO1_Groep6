@@ -55,7 +55,7 @@ Route::get('/stertselaar', function () {
 Auth::routes(['register' => false]);
 
 
-Route::get('/home','pagecontroller@index');
+Route::get('/','pagecontroller@index');
 Route::get('/activiteiten','pagecontroller@index1');
 Route::get('/cursussen','pagecontroller@index2');
 Route::get('/ver','pagecontroller@index3');
