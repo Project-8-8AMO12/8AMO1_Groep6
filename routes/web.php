@@ -36,7 +36,7 @@ Route::post('/contact', 'ContactController@send');
 Route::post('/home', 'ContactController@send');
 
 // album route
-<<<<<<< HEAD
+
 Auth::routes(['register' => false]);
 
 // current account settings
@@ -56,7 +56,7 @@ Route::post('asettings/adduserpost','SettingsController@adduserpost');
 Route::get('messages', 'MessageController@messages')->middleware('auth');
 Route::get('/messages/message/{id}', 'MessageController@viewindividual')->middleware('auth');
 Route::get('/messages/delete/{id}','MessageController@delete');
-=======
+
 Route::get('/album', function () {
     return view('album');
 });
@@ -104,4 +104,4 @@ Route::get('/deletepagina/{id}', 'CreateAndUpdateController@Delete');
 
 Auth::routes(['register' => false]);
 
->>>>>>> Issue_#1_cms_pages
+
