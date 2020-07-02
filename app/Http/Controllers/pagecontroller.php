@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class pagecontroller extends Controller
 {
+    public function index()
+    {
+        return view('home');
+    }
+
     public function index1()
     {
         return view('activiteiten');
