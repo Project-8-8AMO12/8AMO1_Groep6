@@ -1,100 +1,50 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.default')
+@section('content')
 
-        <title>Laravel</title>
+<!-- Page Content -->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <p class="lead mt-3">Home | Imkers Leiden</p> <!--MAYBE ADD BREADCRUMB-->
+      </div>
+    </div>
+  </div>
+</header>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+<div class="row mt-3">
+  <div class="col-sm-9">
+    <h4>  Welkom op de website van Imkersvereniging Leiden!</h4>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
 
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    <div class="row mt-2 mb-2">
+      <div class="col-sm-3"><img src="{{asset('img/honingraat.jpg')}}" class="img-fluid rounded float-right"></div>
+      <div class="col-sm-9">
+        <h6>Wat wij doen:</h6>
+        <p>
+          - <b>Bijenhouden</b>, zo hebben wij een aantal bijenstallen. Deze zijn te vinden in o.a. het Heempark te Leiden, de kinderboerderij in de Merenwijk, Koninginneweg te Noordwijkerhout en tot slot nog een bijenstal in het Polderpark Cronesteijn.<br>
+          - <b>Bijeenkomsten organiseren</b>, bijvoorbeeld de jaarlijkse bijenmarkt, of lezingen, films, diavertoningen, en zelfs cursussen bijenteelt!
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-2 mb-2">
+      <div class="col-sm-9">
+        <p>
+          <b>Bijenhouden als hobby</b><br>
+          De tijd van de romantische bijenteelt in strokorven is voorbij. Tegenwoordig worden bijen hoofdzakelijk gehouden in meerdelige houten of kunstof kasten. Het voordeel van kasten is dat de imker zijn volken gemakkelijker kan controleren. De raampjes kunnen er worden uitgehaald om de honing te oogsten, en om ziekten en plagen van de bijen te bestrijden. Het is in Nederland niet mogelijk van de bijenteelt te leven, maar als de imker het goed doet, kan het imkeren een aardige hoeveelheid honing opleveren, en hoeft de hobby weinig geld te kosten.
+        </p>
+      </div>
+      <div class="col-sm-3"><img src="{{asset('img/imker2.jpg')}}" class="img-fluid rounded"></div>
+    </div>
+
+    @endsection
