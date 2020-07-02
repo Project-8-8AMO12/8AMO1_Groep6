@@ -102,12 +102,6 @@
                 "brick",
                 "math"
             ],
-            "funding": [
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/brick/math",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-04-15T15:59:35+00:00"
         },
         {
@@ -218,6 +212,7 @@
                 "uppercase",
                 "words"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -233,6 +228,9 @@
                 }
             ],
             "time": "2020-05-29T15:13:26+00:00"
+=======
+            "time": "2020-05-06T11:01:57+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "doctrine/lexer",
@@ -541,12 +539,6 @@
                 "cors",
                 "crossdomain",
                 "laravel"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/barryvdh",
-                    "type": "github"
-                }
             ],
             "time": "2020-04-28T08:47:37+00:00"
         },
@@ -1135,6 +1127,7 @@
                 "md",
                 "parser"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://enjoy.gitstore.app/repositories/thephpleague/commonmark",
@@ -1162,6 +1155,9 @@
                 }
             ],
             "time": "2020-06-27T12:50:08+00:00"
+=======
+            "time": "2020-05-04T22:15:21+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "league/flysystem",
@@ -1245,6 +1241,7 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://offset.earth/frankdejonge",
@@ -1252,6 +1249,9 @@
                 }
             ],
             "time": "2020-05-18T15:13:39+00:00"
+=======
+            "time": "2020-04-16T13:21:26+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "monolog/monolog",
@@ -1421,6 +1421,7 @@
                 "datetime",
                 "time"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://opencollective.com/Carbon",
@@ -1432,6 +1433,9 @@
                 }
             ],
             "time": "2020-06-25T20:20:01+00:00"
+=======
+            "time": "2020-04-20T15:05:43+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "nikic/php-parser",
@@ -2103,12 +2107,6 @@
                 "identifier",
                 "uuid"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
-                }
-            ],
             "time": "2020-03-29T20:13:32+00:00"
         },
         {
@@ -2250,6 +2248,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2265,6 +2264,9 @@
                 }
             ],
             "time": "2020-06-15T12:59:21+00:00"
+=======
+            "time": "2020-03-30T11:42:42+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/css-selector",
@@ -2317,6 +2319,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2392,6 +2395,9 @@
                 }
             ],
             "time": "2020-05-27T08:34:37+00:00"
+=======
+            "time": "2020-03-27T16:56:45+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/error-handler",
@@ -2448,6 +2454,7 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2463,6 +2470,9 @@
                 }
             ],
             "time": "2020-05-30T20:35:19+00:00"
+=======
+            "time": "2020-03-30T14:14:32+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2534,6 +2544,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2549,6 +2560,9 @@
                 }
             ],
             "time": "2020-05-20T17:43:50+00:00"
+=======
+            "time": "2020-03-27T16:56:45+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -2669,6 +2683,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2684,6 +2699,9 @@
                 }
             ],
             "time": "2020-05-20T17:43:50+00:00"
+=======
+            "time": "2020-03-27T16:56:45+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/http-foundation",
@@ -2744,6 +2762,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2759,6 +2778,9 @@
                 }
             ],
             "time": "2020-06-15T06:52:54+00:00"
+=======
+            "time": "2020-04-18T20:50:06+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/http-kernel",
@@ -2857,6 +2879,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2872,6 +2895,9 @@
                 }
             ],
             "time": "2020-06-15T13:51:38+00:00"
+=======
+            "time": "2020-04-28T18:53:25+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/mime",
@@ -2934,6 +2960,7 @@
                 "mime",
                 "mime-type"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2949,6 +2976,9 @@
                 }
             ],
             "time": "2020-06-09T15:07:35+00:00"
+=======
+            "time": "2020-04-17T03:29:44+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -3010,6 +3040,7 @@
                 "polyfill",
                 "portable"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3025,6 +3056,9 @@
                 }
             ],
             "time": "2020-06-06T08:46:27+00:00"
+=======
+            "time": "2020-05-08T16:50:20+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -3087,6 +3121,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3180,6 +3215,9 @@
                 }
             ],
             "time": "2020-06-06T08:46:27+00:00"
+=======
+            "time": "2020-05-08T16:50:20+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -3245,6 +3283,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3341,6 +3380,9 @@
                 }
             ],
             "time": "2020-06-14T14:40:37+00:00"
+=======
+            "time": "2020-05-08T16:50:20+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3403,6 +3445,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3418,6 +3461,9 @@
                 }
             ],
             "time": "2020-06-06T08:46:27+00:00"
+=======
+            "time": "2020-05-08T16:50:20+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-php72",
@@ -3472,6 +3518,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3487,6 +3534,9 @@
                 }
             ],
             "time": "2020-05-12T16:47:27+00:00"
+=======
+            "time": "2020-05-08T17:28:34+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/polyfill-php73",
@@ -3548,6 +3598,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3643,6 +3694,9 @@
                 }
             ],
             "time": "2020-06-06T08:46:27+00:00"
+=======
+            "time": "2020-05-02T14:56:09+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/process",
@@ -3692,6 +3746,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3707,6 +3762,9 @@
                 }
             ],
             "time": "2020-05-30T20:35:19+00:00"
+=======
+            "time": "2020-04-15T15:59:10+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/routing",
@@ -3784,6 +3842,7 @@
                 "uri",
                 "url"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3799,6 +3858,9 @@
                 }
             ],
             "time": "2020-06-10T11:49:58+00:00"
+=======
+            "time": "2020-04-21T21:02:50+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/service-contracts",
@@ -4033,6 +4095,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4048,6 +4111,9 @@
                 }
             ],
             "time": "2020-05-30T20:35:19+00:00"
+=======
+            "time": "2020-04-12T16:45:47+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "symfony/translation-contracts",
@@ -4194,6 +4260,7 @@
                 "debug",
                 "dump"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4209,6 +4276,9 @@
                 }
             ],
             "time": "2020-05-30T20:35:19+00:00"
+=======
+            "time": "2020-04-12T16:45:47+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -4321,6 +4391,7 @@
                 "env",
                 "environment"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -4332,6 +4403,9 @@
                 }
             ],
             "time": "2020-06-07T18:25:35+00:00"
+=======
+            "time": "2020-05-02T14:08:57+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "voku/portable-ascii",
@@ -4379,6 +4453,7 @@
                 "clean",
                 "php"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://www.paypal.me/moelleken",
@@ -4398,6 +4473,9 @@
                 }
             ],
             "time": "2020-06-15T23:49:30+00:00"
+=======
+            "time": "2020-03-13T01:23:26+00:00"
+>>>>>>> Issue_#1_cms_pages
         }
     ],
     "packages-dev": [
@@ -4522,12 +4600,6 @@
                 "facade",
                 "flare",
                 "reporting"
-            ],
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/spatie",
-                    "type": "patreon"
-                }
             ],
             "time": "2020-03-02T15:52:04+00:00"
         },
@@ -4994,20 +5066,6 @@
                 "laravel-zero",
                 "php",
                 "symfony"
-            ],
-            "funding": [
-                {
-                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/nunomaduro",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/nunomaduro",
-                    "type": "patreon"
-                }
             ],
             "time": "2020-04-04T19:56:08+00:00"
         },
@@ -5656,6 +5714,7 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://phpunit.de/donate.html",
@@ -5667,6 +5726,9 @@
                 }
             ],
             "time": "2020-06-22T07:06:58+00:00"
+=======
+            "time": "2020-04-23T04:39:42+00:00"
+>>>>>>> Issue_#1_cms_pages
         },
         {
             "name": "scrivo/highlight.php",
@@ -5734,12 +5796,6 @@
                 "highlight.js",
                 "highlight.php",
                 "syntax"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/allejo",
-                    "type": "github"
-                }
             ],
             "time": "2020-03-02T05:59:21+00:00"
         },
@@ -6456,6 +6512,5 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
